@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+<style>
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home-button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 180px;
+    background-color: #111;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.inner-button {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    border: 1px solid rgb(169, 157, 157);
+    background-color: white;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.project-image {
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 30px;
+    background-color: blue;
+}
+
+.project-head {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+    margin-top: 100px;
+}
+
+.project-description {
+    color: white;
+    font-size: 24px;
+    margin: 0 40px;
+}
+
+.scroll {
+    margin: 100px 300px 100px 600px;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 0;
+    display: block;
+    cursor: pointer;
+    background: white;
+    text-align: center;
+    border: none;
+}
+
+.scroll:hover {
+    background-color: skyblue;
+}
+.inner-button:hover {
+            opacity: 0.6;
+            background-color: black;
+            color: white
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar Navigation -->
+<div class="home-button">
+    <a href="home.html"><button class="inner-button">HOME</button></a>
+    <a href="about.html"><button class="inner-button">ABOUT</button></a>
+    <a href="resume.html"><button class="inner-button">RESUME</button></a>
+    <a href="projects.html"><button class="inner-button">PROJECTS</button></a>
+    <a href="contact.html"><button class="inner-button">CONTACT</button></a>
+</div>
+
+<!-- Projects Section -->
+<section style="margin-left:200px; padding: 20px;">
+
+    <p class="title">Projects</p>
+
+    <h1 class="title">Image Forgery Detection</h1>
+    <div class="project-head">
+        <div>
+            <img class="project-image" src="project image.jpg" alt="Image Forgery Detection">
+        </div>
+        <div>
+            <p class="project-description">
+                Developed a Digital Image Forgery Detection system using CNN and Error Level Analysis (ELA). 
+                The system allows users to upload images through a web interface and analyzes them for potential forgery. 
+                A CNN-based model classifies images as authentic or manipulated, enhancing detection accuracy. 
+                Optimized image preprocessing and model performance for reliable and efficient forgery detection.
+            </p>
+        </div>
+    </div>
+
+    <h1 class="title">Stock Market Analysis</h1>
+    <div class="project-head">
+        <div>
+            <img class="project-image" src="project-2.jpg" alt="Stock Market Analysis">
+        </div>
+        <div>
+            <p class="project-description">
+                Developed a Python-based application that collects and analyzes historical stock data using Pandas, 
+                NumPy, and yFinance API. Implemented machine learning and LSTM models to forecast future stock prices, 
+                applied technical indicators (SMA, EMA, RSI) for trend analysis, and visualized insights using Matplotlib 
+                and Seaborn.
+            </p>
+        </div>
+    </div>
+
+    <a href="contact.html"><button class="scroll">Scroll down</button></a>
+</section>
+
+</body>
+</html>

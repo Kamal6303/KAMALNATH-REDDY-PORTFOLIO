@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Kamalnath Reddy</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: #ccc;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.home-button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 180px;
+    background-color: #111;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.inner-button {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    border: 1px solid rgb(169, 157, 157);
+    background-color: white;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-left: 200px; /* To avoid overlapping with sidebar */
+    padding: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.inner-button:hover {
+            opacity: 0.6;
+            background-color: black;
+            color: white
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+}
+
+.contact-info {
+    background: #111;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar Navigation -->
+<div class="home-button">
+    <a href="home.html"><button class="inner-button">HOME</button></a>
+    <a href="about.html"><button class="inner-button">ABOUT</button></a>
+    <a href="resume.html"><button class="inner-button">RESUME</button></a>
+    <a href="projects.html"><button class="inner-button">PROJECTS</button></a>
+    <a href="contact.html"><button class="inner-button">CONTACT</button></a>
+</div>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <h2>Contact Details</h2>
+    <p>Below are the details to reach out to me!</p>
+
+    <div class="contact-grid">
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <textarea placeholder="Message" name="message" rows="6" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p><strong>Address</strong><br>Gorvimanipalli<br>Kolimigundla, Nandyal<br>AP</p>
+            <p><strong>Email</strong><br><a href="mailto:kamalnathreddy426@gmail.com">kamalnathreddy426@gmail.com</a></p>
+            <p><strong>Phone</strong><br>9392387382</p>
+            <p><strong>Social</strong></p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

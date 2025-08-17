@@ -1,0 +1,159 @@
+ <html>
+<head>
+<title></title>
+<style>
+html,
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.home-button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 180px;
+    background-color: #111;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+.inner-button {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    border: 1px solid rgb(169, 157, 157);
+    background-color: white;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    transition: 0.4s;
+}
+.inner-button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* Content */
+.intern, .study-info {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.internship, .inter-logo {
+    width: 40px;
+}
+
+.intern-description, .study-description {
+    margin-left: 10px;
+}
+
+.innerr-button {
+    border-radius: 40px;
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 2px solid violet;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    background: white;
+    transition: 0.3s;
+}
+.innerr-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Scroll button */
+.scroll {
+    margin: 100px auto;
+    display: block;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+}
+.scroll:hover {
+    background-color: skyblue;
+}
+.inner-button:hover {
+            opacity: 0.6;
+            background-color: black;
+            color: white
+}
+</style>
+</head>
+<body>
+
+<div class="home-button">
+    <a href="home.html"><button class="inner-button">HOME</button></a>
+    <a href="about.html"><button class="inner-button">ABOUT</button></a>
+    <a href="resume.html"><button class="inner-button">RESUME</button></a>
+    <a href="projects.html"><button class="inner-button">PROJECTS</button></a>
+    <a href="contact.html"><button class="inner-button">CONTACT</button></a>
+</div>
+
+<section style="margin-left:200px; padding:20px;">
+    <h1>Internships</h1>
+
+    <div class="intern">
+        <img class="internship" src="internship-pic.jpg">
+        <div class="intern-description">
+            <h2>Machine Learning Intern → SkillDzire (May–June 2024)</h2>
+            <p>Completed an online internship with SkillDzire, specializing in machine learning.</p>
+        </div>
+    </div>
+
+    <div class="intern">
+        <img class="internship" src="internship-pic.jpg">
+        <div class="intern-description">
+            <h2>Artificial Intelligence Intern → Codsoft (Nov 2024–Feb 2025)</h2>
+            <p>Completed an online internship with Codsoft, specializing in Python.</p>
+        </div>
+    </div>
+
+    <h1>Education</h1>
+
+    <div class="study-info">
+        <img class="inter-logo" src="btech-logo.jpg">
+        <div class="study-description">
+            <h2>2021–2025 — Bachelor of Technology</h2>
+            <p style="color: gray;">TKR College of Engineering and Technology</p>
+            <p style="color: gray;">Percentage: 73%</p>
+        </div>
+    </div>
+
+    <div class="study-info">
+        <img class="inter-logo" src="inter-logo.jpg">
+        <div class="study-description">
+            <h2>2019–2021 — Intermediate</h2>
+            <p style="color: gray;">Sree Chaitanya Junior College</p>
+            <p style="color: gray;">Percentage: 83%</p>
+        </div>
+    </div>
+
+    <div class="study-info">
+        <img class="inter-logo" src="tenth-logo.jpg">
+        <div class="study-description">
+            <h2>2019 — 10th Standard</h2>
+            <p style="color: gray;">Sri Sai Vijetha Concept School</p>
+            <p style="color: gray;">Percentage: 90%</p>
+        </div>
+    </div>
+
+    <a href="RESUME-KAMALNATH REDDY.pdf"><button class="innerr-button">Resume</button></a>
+    <a href="projects.html"><button class="scroll">Scroll down</button></a>
+</section>
+
+</body>
+</html>
